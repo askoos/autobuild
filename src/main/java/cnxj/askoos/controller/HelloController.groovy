@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.RestController
 
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/hello")
 class HelloController {
 
-    @RequestMapping("/sayHello")
+    @RequestMapping(value = "/sayHello", method = RequestMethod.GET)
     @ResponseBody
     String sayHello() {
         "Hello Askoos!"
