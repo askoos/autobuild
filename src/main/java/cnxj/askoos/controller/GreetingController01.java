@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * 问候
  */
 @Controller
-@RequestMapping("/greeting")
+@RequestMapping("/greeting01")
 class GreetingController01 {
 
     private final AtomicLong counter = new AtomicLong();
@@ -21,7 +21,7 @@ class GreetingController01 {
      * 说你好
      * @param username
      * @return
-     *  http://localhost:8080/greeting/sayHello?username=Askoos
+     *  http://localhost:8080/greeting01/sayHello?username=Askoos
      */
     @RequestMapping("/sayHello")
     @ResponseBody
