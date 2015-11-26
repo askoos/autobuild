@@ -1,6 +1,7 @@
-package cnxj.askoos.controller;
+package cnxj.askoos.controller
 
 import cnxj.askoos.model.Greeting;
+import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,7 +22,7 @@ class GreetingController01 {
      * 说你好
      * @param username
      * @return
-     *  http://localhost:8080/greeting01/sayHello?username=Askoos
+     * http://localhost:8080/greeting01/sayHello?username=Askoos
      */
     @RequestMapping("/sayHello")
     @ResponseBody
@@ -31,4 +32,9 @@ class GreetingController01 {
                 String.format("Hello %s!", username));
     }
 
+    static void main(String[] args) {
+        SpringApplication.run GreetingController01, args
+    }
+
 }
+
