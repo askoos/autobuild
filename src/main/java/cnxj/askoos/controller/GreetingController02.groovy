@@ -16,6 +16,7 @@ import java.util.concurrent.atomic.AtomicLong;
  */
 @RestController
 @RequestMapping("/greeting02")
+// @RestController，表明该类的每个方法返回对象而不是视图。它实际就是 @Controller 和 @ResponseBody 混合使用的简写方法。
 class GreetingController02 {
     private final AtomicLong counter = new AtomicLong();
 
@@ -26,7 +27,6 @@ class GreetingController02 {
      * http://localhost:8080/greeting02/sayHello/Askoos
      */
     @RequestMapping("/sayHello/{username}")
-    @ResponseBody
     Greeting sayHello(@PathVariable("username") String username) {
         return new Greeting(counter.incrementAndGet(),
                 String.format("Hello %s!", username));
