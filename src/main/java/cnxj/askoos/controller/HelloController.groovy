@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController
 class HelloController {
 
     @RequestMapping(value = "/sayHello", method = RequestMethod.GET)
-    @ResponseBody
     String sayHello() {
         "Hello Askoos!"
     }
