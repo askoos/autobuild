@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
 
+/**
+ * Created by Askoos on 2015/11/26.
+ */
 @SpringBootApplication
 @Configuration// 配置控制
 @ComponentScan// 组件扫描
