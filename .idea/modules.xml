@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://F://autobuild/autobuild.iml" filepath="F://autobuild/autobuild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autobuild.iml" filepath="$PROJECT_DIR$/autobuild.iml" />
     </modules>
   </component>
 </project>
